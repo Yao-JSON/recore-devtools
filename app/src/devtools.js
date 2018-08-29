@@ -1,4 +1,5 @@
-console.log(chrome.devtools);
+/* eslint no-undef:0 */
+const { runtime } = chrome;
 
-console.log(1221);
-
+console.log(runtime);
+runtime.sendMessage('recore-panel-load');
